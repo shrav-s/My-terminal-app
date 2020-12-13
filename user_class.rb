@@ -1,12 +1,11 @@
 class User
-    user_record={}
+    user_record = {}
     attr_accessor :user_record
     def initialize(name,score)
         @user_record = {"name" => name, "score" => score}
-
     end
 
-    def play_gamae
+    def play_game
     end
 
     def check_score

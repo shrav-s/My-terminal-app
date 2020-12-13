@@ -1,12 +1,11 @@
 require_relative("method.rb")
-neha = User.new("Neha", "20")
 
-puts neha.display
 is_exit = false
 
-is_exit = welcome
+arr_welcome = welcome
 
-if !(is_exit)
+if !(arr_welcome[0])
+user_object = User.new(arr_welcome[1], 0) 
 menu
 end
 
