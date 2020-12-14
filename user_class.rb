@@ -1,3 +1,4 @@
+require_relative("game_class.rb")
 class User
     user_record = {}
     attr_accessor :user_record
@@ -5,7 +6,9 @@ class User
         @user_record = {"name" => name, "score" => score}
     end
 
-    def play_game
+    def play_game(userobj)
+        game_object = Game.new
+        game_object.start_game(userobj)   
     end
 
     def check_score

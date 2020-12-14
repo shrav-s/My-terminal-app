@@ -1,11 +1,9 @@
 require_relative("method.rb")
 
-is_exit = false
+is_exit = welcome
 
-arr_welcome = welcome
-
-if !(arr_welcome[0])
-user_object = User.new(arr_welcome[1], 0) 
-menu
+if (is_exit)
+    puts "Bye..." 
 end
+
 

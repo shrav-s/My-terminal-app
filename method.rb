@@ -7,7 +7,7 @@ def user_name
     name = gets.chomp.capitalize
     system "clear"
     puts " Hi #{name}"
-     return name
+    return name
 end
 
 
@@ -15,30 +15,28 @@ end
 def welcome
     exit = false
     
-puts "*************Welcome to Word Game****************"
-puts "Rules of the game"
-puts " 1. Computer presents a clue and you need guess the word in question...."
-puts " 2. You have three attempts to guess right, fewer the number of attempts higher you score..."
-puts " 3. Every word has three clues and one clue is revealed with every incorrect attempt"
-puts " 4. Score more points when you guess right in the first attempt"
+    puts "*************Welcome to Word Game****************"
+    puts "Rules of the game"
+    puts " 1. Computer presents a clue and you need guess the word in question...."
+    puts " 2. You have three attempts to guess right, fewer the number of attempts higher you score..."
+    puts " 3. Every word has three clues and one clue is revealed with every incorrect attempt"
+    puts " 4. Score more points when you guess right in the first attempt"
  
-puts "Continue to play? (y/n)"
+    puts "Continue to play? (y/n)"
 
-user_input = (gets.chomp.downcase).to_s
-    if 
+    user_input = (gets.chomp.downcase).to_s
+        if 
         user_input == 'y'
-        usr = user_name
-      
-    elsif 
+        menu
+        elsif 
         user_input == 'n'
         exit = true
-        puts "Bye..."   
-    else
+        else
         puts "invalid input"
         welcome
-    end
+        end
    
-    return exit, usr
+    return exit
 end
 
 
@@ -52,7 +50,9 @@ def menu
     
     case user_input
         when 1
-          puts "start game"
+          user = user_name
+          user_object = User.new(user, 0)   
+          user_object.play_game(user_object)
         when 2
           User.display
         when 3
