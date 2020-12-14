@@ -25,12 +25,11 @@ class Wordclues
         }
 
        @wordsandclues ={"w1"=> ["c1","c2","c3"],"w2"=> ["c4", "c5", "c6"], "w3"=> ["c7","c8","c9"], "w4"=> ["c10", "c11", "c12"], "w5"=> ["c13", "c14", "c15"], "w6"=> ["c16", "c17", "c18"]}
-       @attemptscore = [100,50,20]
-      
+       @attemptscore = [100,50,20]         
     end
-# method to return keys of all words
+# method to return keys of three words
     def get_word_keys
-        return @words.keys        
+        return Hash[@words.to_a.sample(3)].keys     
     end
 # method to return clues of all words
     def get_clue_keys
@@ -60,3 +59,5 @@ end
 # puts xyz.get_clue("c3")
 # puts xyz.get_clue_for_word("w1")
 # puts xyz
+
+

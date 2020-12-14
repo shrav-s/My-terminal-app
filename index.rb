@@ -1,9 +1,7 @@
-require_relative("method.rb")
+
+
+require_relative('method')
 
 is_exit = welcome
 
-if (is_exit)
-    puts "Bye..." 
-end
-
-
+puts 'Bye...' if is_exit
