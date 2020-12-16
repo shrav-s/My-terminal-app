@@ -1,5 +1,3 @@
-
-
 require_relative('user_class')
 
 # method to store user_name
@@ -13,18 +11,19 @@ end
 
 # Displays welcome message
 def welcome
-  exit = false
-
   puts '*************Welcome to Word Game****************'
   puts 'Rules of the game'
   puts ' 1. Computer presents a clue and you need guess the word in question....'
   puts ' 2. You have three attempts to guess right, fewer the number of attempts higher you score...'
   puts ' 3. Every word has three clues and one clue is revealed with every incorrect attempt'
   puts ' 4. Score more points when you guess right in the first attempt'
-
   puts 'Continue to play? (y/n)'
-
   user_input = gets.chomp.downcase.to_s
+  response(user_input)
+end
+
+def response(user_input)
+  exit = false
   case user_input
   when 'y'
     user = user_name
@@ -36,7 +35,6 @@ def welcome
     puts 'invalid input'
     welcome
   end
-
   exit
 end
 
@@ -60,6 +58,6 @@ def menu(user_object)
     puts 'Hope to see you again...'
   else
     puts 'invalid input, please try again'
-    menu
+    menu(user_object)
   end
 end
