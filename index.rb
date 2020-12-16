@@ -1,5 +1,5 @@
 require_relative('method')
-
+require('colorize')
 if ARGV.length > 0
     flag, *rest = ARGV
     ARGV.clear
