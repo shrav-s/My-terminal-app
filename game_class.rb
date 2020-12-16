@@ -55,54 +55,37 @@ class Game
         user.user_record['score'] =
           user.user_record['score'] + @current_word_score.to_i
 
-        @user_guess_word = gets.chomp.downcase.yellow.on_black
+        @user_guess_word = gets.chomp.downcase
         #start of validating user answer
         if @user_guess_word == @current_word
           game_score += @current_word_score
           system 'clear'
           puts "That is a corrcet answer!!  You scored #{@current_word_score} points.  Your total game score is #{game_score}".green.on_black
-          puts 'Here is your next question...'.yellow.on_black
+          
         #start of check if there are more questions
           if question_count < @word_clue_object.get_word_keys.length
-          secret_word = ''
-          break
+            puts 'Here is your next question...'.yellow.on_black
+            secret_word = ''
           end
+      
+          break
+          
         #end of check if there are more questions
-        else
-          puts ' sorry.. that was a wrong answer !!'.colorize(:color => :white, :background => :red)
-          if(@current_attempt_count == @current_word_clues.length)          
-          puts " You've ran out of your chances. The correct answer was - #{@current_word}".red.on_black
-          secret_word = ''
-        end
+          else
+            puts ' sorry.. that was a wrong answer !!'.colorize(:color => :white, :background => :red)
+              if(@current_attempt_count == @current_word_clues.length)          
+                puts " You've ran out of your chances. The correct answer was - #{@current_word}".red.on_black
+                secret_word = ''
+              end
         end
     end
-    end
-    if question_count == @word_clue_object.get_word_keys.length
+     if question_count == @word_clue_object.get_word_keys.length
       puts 'Congratulations!! You have completed this game'.green.on_black
       puts " Your game score is #{game_score} and total score is #{user.user_record['score']}".cyan.on_black
     end
-  end
+    end
+   
+  end  
+  
 end
-  # def display_clue()
-  #     clue = @word_clue_object.get_clue_for_word("w1")[0]
 
-  #     return @word_clue_object.get_clue(clue)
-  # end
-  # def input
-  #     user_answer = gets.chomp.downcase
-  #     if user_answer != @word_clue_object.get_word("w1")
-  #         clue = @word_clue_object.get_clue_for_word("w1")[1]
-
-  #     else
-
-  #     end
-  # end
-
-  # def attempt_Count
-  # end
-
-
-# user_object = User.new("AVinash", 0)
-#  xyz =Game.new
-#  # # # puts xyz.display_clue
-# xyz.start_game(user_object)
