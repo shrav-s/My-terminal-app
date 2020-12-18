@@ -1,5 +1,6 @@
 require_relative('method')
 require('colorize')
+# require ('tty-prompt')
 # if ARGV.length > 0
 #     flag, *rest = ARGV
 #     ARGV.clear
@@ -16,4 +17,4 @@ require('colorize')
 
 is_exit = welcome
 
-puts 'Bye...' if is_exit
+puts 'See you next time.Bye...'.yellow.on_black if is_exit

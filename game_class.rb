@@ -1,7 +1,8 @@
 require_relative('wordsclues_class')
 require_relative('user_class')
+require 'json'
 require('colorize')
-
+require('artii')
 class Game
   @user_object
   @current_word
@@ -15,11 +16,17 @@ class Game
     # @attempt = attempt
     # @words = words
     # @clues = clues
-
+    @users_array = load_data
     # @current_attempt
     # @game_total_score
     # @current_word_clues
   end
+
+  def load_data
+    data = File.read("user_database.json")
+    return JSON.parse(data)   
+  end
+
 #start game method
   def start_game(user)
       @user_object = user
@@ -60,7 +67,9 @@ class Game
         if @user_guess_word == @current_word
           game_score += @current_word_score
           system 'clear'
-          puts "That is a corrcet answer!!  You scored #{@current_word_score} points.  Your total game score is #{game_score}".green.on_black
+
+          puts "𝕋𝕙𝕒𝕥 𝕚𝕤 𝕒 𝕔𝕠𝕣𝕣𝕖𝕔𝕥 𝕒𝕟𝕤𝕨𝕖𝕣❕❕".magenta.on_black
+          puts "You scored #{@current_word_score} points.  Your total game score is #{game_score}".green.on_black
           
         #start of check if there are more questions
           if question_count < @word_clue_object.get_word_keys.length
@@ -76,12 +85,16 @@ class Game
               if(@current_attempt_count == @current_word_clues.length)          
                 puts " You've ran out of your chances. The correct answer was - #{@current_word}".red.on_black
                 secret_word = ''
+                system 'clear'
               end
         end
     end
+     
      if question_count == @word_clue_object.get_word_keys.length
-      puts 'Congratulations!! You have completed this game'.green.on_black
-      puts " Your game score is #{game_score} and total score is #{user.user_record['score']}".cyan.on_black
+      a = Artii::Base.new
+      system 'clear'
+      puts a.asciify('Congratulations!!').white.on_black      
+      puts " Your game score is #{game_score} and total score is #{user.user_record['score']}".yellow.on_black
     end
     end
    
