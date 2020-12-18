@@ -68,7 +68,7 @@ class Game
           game_score += @current_word_score
           system 'clear'
 
-          puts "𝕋𝕙𝕒𝕥 𝕚𝕤 𝕒 𝕔𝕠𝕣𝕣𝕖𝕔𝕥 𝕒𝕟𝕤𝕨𝕖𝕣❕❕".magenta.on_black
+          puts "T̳h̳a̳t̳ i̳s̳ a̳ c̳o̳r̳r̳e̳c̳t̳ a̳n̳s̳w̳e̳r̳!̳!̳".magenta.on_black
           puts "You scored #{@current_word_score} points.  Your total game score is #{game_score}".green.on_black
           
         #start of check if there are more questions
@@ -81,7 +81,7 @@ class Game
           
         #end of check if there are more questions
           else
-            puts ' sorry.. that was a wrong answer !!'.colorize(:color => :white, :background => :red)
+            puts 'S̳o̳r̳r̳y̳.̳.̳ t̳h̳a̳t̳ w̳a̳s̳ a̳ w̳r̳o̳n̳g̳ a̳n̳s̳w̳e̳r̳ !̳!̳'.red.on_black
               if(@current_attempt_count == @current_word_clues.length)          
                 puts " You've ran out of your chances. The correct answer was - #{@current_word}".red.on_black
                 secret_word = ''

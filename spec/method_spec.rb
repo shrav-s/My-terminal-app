@@ -7,7 +7,7 @@ describe 'response' do
     end
 end
 
-describe 'xyz' do
+describe 'display' do
     it 'It should display user score' do
         expect((User.new("abc", 20)).display).to eq ('Hi abc your total score is 20')
     end

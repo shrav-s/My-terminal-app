@@ -14,9 +14,8 @@ if [ ! -d $DIR 2>/dev/null ]; then
 fi
 ruby -v
 
-
 # Install a gems dependencies on the system
-listofgems="colorize json rspec bundler ascii"
+listofgems="colorize json rspec bundler artii"
 version=0.8.1 
 for name in $listofgems;
 do
