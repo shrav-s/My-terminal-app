@@ -1,15 +1,28 @@
+# My Termianl App - Word Game
+# My Termianl App _T1A3
+
+GitHub: https://github.com/shrav-s/shravani-portfolio
+Trello board: https://trello.com/b/EMxh3Vju/my-terminal-app
 
 ## Table of Contents
 
 Software Development Plan
+
 -Description
+
 -Statement of Purpose and Scope
+
 -Features
 -User Interaction and Experience
+
 -Control Flow Diagram- Flow Chart and Control Flow diagram
+
 -Implementation Plan
+
 -Testing
+
 -Installation Instructions
+
 -Related Documents
 
 # Software Development Plan
@@ -101,8 +114,11 @@ The next step in the build process was designing the flow chart and data flow st
 
 Creating a Trello board to estimate time and plan and divide the project, keeping in mind the deadline for submission played an important part in the develpment of the application. 
 
+![trelloboard](docs\trello-1.png)
+
 ![trelloboard](docs\trelloboard.png)
 
+![trelloboard](docs\trello-2.png)
 ## Testing ##
 Manual testing was done at every step of the build process to make sure the application does'nt crash. I have attempted to write few test cases using rspec but more thorough code is needed to test classes.
 
@@ -140,3 +156,5 @@ Enjoy the game!
 used following links:
 ascii art - https://fsymbols.com/generators/carty/
 https://stackoverflow.com/
+ruby gems - 
+
