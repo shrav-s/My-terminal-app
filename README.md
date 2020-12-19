@@ -48,14 +48,14 @@ The Word Game is command line interface application. The player will need instal
 I have used the Colorize Gem to break the code visually and to make the screen look visually pleasing.  [Ascii art generator] (https://fsymbols.com/generators/carty/) has been used in the welcome screen to display the name of the game; messages when the player guesses the word correctly and at the end of the game congratulating player for completing the game.
 
 ### Database/Track Score: ###
- JSON has been used to record and store the Player game records. During the game the program tracks the score of the user based on the number of attempts and at the end of the game the score is recorded in the JSON file against the user name. The total score is displayed to the user at the end of the game. The player can check his score records by choosing **Check Score** Records option from the menu screen.
+ JSON has been used to record and store the Player game records. During the game the program tracks the score of the player based on the number of attempts and at the end of the game the score is recorded in the JSON file against the player name. The total score is displayed to the player at the end of the game. The player can check his score records by choosing **Check Score** Records option from the menu screen.
 
 ### Play as another player: ###
- The menu screen provides the player with the option to play as another user. This option allows user to play new game as a new player. When the player chooses to play as another user, a new record is created in the database with a new name.
+ The menu screen provides the player with the option to play as another player. This option allows player to play new game as a new player. When the player chooses to play as another player, a new record is created in the database with a new name.
 
 
-## User Experience/Interaction ##
-Welcome Screen: The welcome screen is displayed when player runs the executable file. The game rules are presented and the user is prompted to enter if he wishe sto continue the game.
+## player Experience/Interaction ##
+Welcome Screen: The welcome screen is displayed when player runs the executable file. The game rules are presented and the player is prompted to enter if he wishe sto continue the game.
 
 ![welcome-new screen](docs\welcome-new.png)
 
@@ -77,7 +77,7 @@ where the player guesses the correct answer, the program displays the player sco
 
 ![rightguess](docs\rightuess-new.png)
 
-when the user completes the game, program displays the players score and overall game score from user records(JSON).
+when the player completes the game, program displays the players score and overall game score from user records(JSON).
 
 ![endofgame](docs\endofgame-new.png)
 
@@ -85,11 +85,11 @@ Menu option 2 displays on the screen players overall games score.
 
 ![option2](docs\option2-new.png)
 
-Menu option 3 redirects the user to the welcome so the player play the game as anew user.
+Menu option 3 redirects the player to the welcome so the player play the game as anew player.
 
 ![option3](docs\option3-new.png)
 
-Menu option 4 terminates the program with a simple message to the user.
+Menu option 4 terminates the program with a simple message to the player.
 
 ![option4](docs\option4-new.png)
 
@@ -156,5 +156,5 @@ Enjoy the game!
 used following links:
 ascii art - https://fsymbols.com/generators/carty/
 https://stackoverflow.com/
-ruby gems - 
+ruby gems - https://rubygems.org/
 
