@@ -4,7 +4,7 @@
 
 GitHub: https://github.com/shrav-s/shravani-portfolio
 
-Trello board: https://trello.com/b/EMxh3Vju/my-terminal-app
+Trello board: https://github.com/shrav-s/My-terminal-app
 
 ## Table of Contents
 
@@ -108,13 +108,13 @@ Menu option 4 terminates the program with a simple message to the player.
 
 ### Flow Chart ###
 
-![option4](docs\flowchart.jpeg)
+![flowchart](docs\flowchart.jpeg)
 
 ### Data flow diagram ###
 
 This data flow diagram represents only three classes - Game class,User class, and Words & Clues class. However during the build process i required another class named User ops class to record and store the players name and score.
 
-![option4](docs\dataflow.jpeg)
+![dataflow](docs\dataflow.jpeg)
 
 ## Implementation Plan ##
 
