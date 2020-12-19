@@ -68,7 +68,7 @@ I have used the Colorize Gem to break the code visually and to make the screen l
 
 Welcome Screen: The welcome screen is displayed when player runs the executable file. The game rules are presented and the player is prompted to enter if he wishe sto continue the game.
 
-![welcome-new screen](docs\welcome-new.png)
+![welcome-new screen](docs\\welcome-new.png)
 
 The player is prompted to enter to his name, when he chooses to continue.
 
