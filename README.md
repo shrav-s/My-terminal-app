@@ -72,65 +72,65 @@ Welcome Screen: The welcome screen is displayed when player runs the executable 
 
 The player is prompted to enter to his name, when he chooses to continue.
 
-![username](docs\username-new.png)
+![username](/docs/username-new.png)
 
 Menu option is displayed, and the game begins when player chooses first menu option.
 The screen displays the secret word and frist clue. The player is then prompted to guess the word.
 
-![startgame](docs\menu-new.png)
+![startgame](/docs/menu-new.png)
 
 when the player inputs his guess the program validates teh guess word against the secret word and displays the message accordinly. Program generated second clue where the player guess is wrong.
 
-![wrongguess](docs\wrongguess-new.png)
+![wrongguess](/docs/wrongguess-new.png)
 
 
 where the player guesses the correct answer, the program displays the player score based on the number of the attempts and presents second secret word and clue.
 
-![rightguess](docs\rightuess-new.png)
+![rightguess](/docs/rightuess-new.png)
 
 when the player completes the game, program displays the players score and overall game score from user records(JSON).
 
-![endofgame](docs\endofgame-new.png)
+![endofgame](/docs/endofgame-new.png)
 
 Menu option 2 displays on the screen players overall games score.
 
-![option2](docs\option2-new.png)
+![option2](/docs/option2-new.png)
 
 Menu option 3 redirects the player to the welcome so the player play the game as anew player.
 
-![option3](docs\option3-new.png)
+![option3](/docs/option3-new.png)
 
 Menu option 4 terminates the program with a simple message to the player.
 
-![option4](docs\option4-new.png)
+![option4](/docs/option4-new.png)
 
 ## Control Flow Diagram ##
 
 ### Flow Chart ###
 
-![flowchart](docs\flowchart.jpeg)
+![flowchart](/docs/flowchart.jpeg)
 
 ### Data flow diagram ###
 
 This data flow diagram represents only three classes - Game class,User class, and Words & Clues class. However during the build process i required another class named User ops class to record and store the players name and score.
 
-![dataflow](docs\dataflow.jpeg)
+![dataflow](/docs/dataflow.jpeg)
 
 ## Implementation Plan ##
 
 Once I have decided on the Word game terminal application, I have brain-stormed the user stories and requirements for the application.
 
-![trelloboard](docs\userstories.png)
+![trelloboard](/docs/userstories.png)
 
 The next step in the build process was designing the flow chart and data flow structures which gave me a clear idea of the classes and possible features i can include in my project.
 
 Creating a Trello board to estimate time and plan and divide the project, keeping in mind the deadline for submission played an important part in the develpment of the application. 
 
-![trelloboard](docs\trello-1.png)
+![trelloboard](/docs/trello-1.png)
 
-![trelloboard](docs\trelloboard.png)
+![trelloboard](/docs/trelloboard.png)
 
-![trelloboard](docs\trello-2.png)
+![trelloboard](/docs/trello-2.png)
 
 ## Testing ##
 
