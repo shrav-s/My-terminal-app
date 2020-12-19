@@ -153,8 +153,12 @@ cd src
 Enjoy the game!
 
 ## Resources ##
+
 used following links:
+
 ascii art - https://fsymbols.com/generators/carty/
+
 https://stackoverflow.com/
+
 ruby gems - https://rubygems.org/
 
