@@ -2,7 +2,7 @@
 
 # My Termianl App _T1A3
 
-GitHub: https://github.com/shrav-s/shravani-portfolio
+GitHub: https://github.com/shrav-s/My-terminal-app
 
 Trello board: https://github.com/shrav-s/My-terminal-app
 
